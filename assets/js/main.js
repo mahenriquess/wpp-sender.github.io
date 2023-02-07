@@ -68,8 +68,8 @@ const prepareItens = function (){
 
     for(var i = 0; i < ArrNumeros.length; i++){
         var link = document.createElement('a');
-        link.setAttribute('href', 'whatsapp://send?phone=55'+ArrNumeros[i]+'&text='+mensagem);
-        // link.setAttribute('href', 'https://api.whatsapp.com/send?phone=55'+ArrNumeros[i]+'&text='+mensagem);
+        //link.setAttribute('href', 'whatsapp://send?phone=55'+ArrNumeros[i]+'&text='+mensagem);
+        link.setAttribute('href', 'https://api.whatsapp.com/send?phone=55'+ArrNumeros[i]+'&text='+mensagem);
         link.setAttribute('target', '_blank');
         link.innerHTML = ArrNumeros[i];
         var itemLista = document.createElement('li');
